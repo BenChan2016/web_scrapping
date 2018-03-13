@@ -46,7 +46,9 @@ for i in range(0,len(lst)):
 #     page = soup.find_all('div', class_='Category1')
 # =============================================================================
 
-
+ with open("test.csv", "w") as output:
+    writer = csv.writer(output, lineterminator='\n')
+    writer.writerows(code_name_pair);
 
 
 
